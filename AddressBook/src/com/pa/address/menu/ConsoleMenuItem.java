@@ -11,6 +11,21 @@ public class ConsoleMenuItem {
 		menuDisplayString = display ;
 		menuItemAction = act ;
 	}
+
+	public String getDisplayText() {
+		return menuDisplayString;
+	}
+
+	public int getChoice() {
+		return choiceId;
+	}
+
+	public void executeAction() throws ConsoleMenuException {
+		if ( menuItemAction != null){
+			menuItemAction.executeAction() ;
+		}else throw new ConsoleMenuException("Action null not configured") ; 
+		
+	}
 	
 	
 	

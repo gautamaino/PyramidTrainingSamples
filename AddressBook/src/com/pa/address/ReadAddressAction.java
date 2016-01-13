@@ -6,7 +6,9 @@ public class ReadAddressAction implements Action {
 
 	@Override
 	public boolean executeAction() {
-		// TODO Auto-generated method stub
+		
+		System.out.println("Action invoked - read address");
+		
 		return false;
 	}
 
