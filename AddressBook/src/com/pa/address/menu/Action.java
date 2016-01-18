@@ -1,9 +1,9 @@
 package com.pa.address.menu;
 
 
-
+@FunctionalInterface
 public interface Action {
 	
-	public boolean executeAction() ; 
+	public void executeAction() ; 
 
 }

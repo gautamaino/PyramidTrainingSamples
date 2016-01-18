@@ -3,9 +3,10 @@ package com.pa.address;
 
 public class Address {
 
-		private int id;
+		private int id = -1;
 		private String adress ;
 		private String street = "Shohum St 2";
+		
 		public int getId() {
 			return id;
 		}

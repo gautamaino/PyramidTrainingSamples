@@ -8,7 +8,7 @@ public class AddressBookMenu extends ConsoleMenu {
 	public AddressBookMenu(){
 		super("My Address book Menu ") ;
 		
-		ConsoleMenuItem addItem = new ConsoleMenuItem("Add Address" , 1 , new ReadAddressAction());
+		ConsoleMenuItem addItem = new ConsoleMenuItem("Add Address" , 1 , () -> System.out.println("Action invoked - read address"));
 		ConsoleMenuItem saveItem = new ConsoleMenuItem("Save Address book" , 2 , new SaveAddressBookAction());
 		
 		addMenuItem(addItem).addMenuItem(saveItem);

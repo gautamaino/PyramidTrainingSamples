@@ -5,8 +5,8 @@ import com.pa.address.menu.Action;
 public class SaveAddressBookAction implements Action {
 
 	@Override
-	public boolean executeAction() {
-		return false ;
+	public void executeAction() {
+		
 	}
 
 }
